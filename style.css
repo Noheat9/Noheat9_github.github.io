@@ -1,0 +1,169 @@
+    html {
+        height: 100%;
+        width: 100%;
+        font-size: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 50px 50px 50px 80px;
+        grid-template-rows: 50px;
+        grid-template-areas: ". gmail image menu Connexion";
+    }
+    
+    a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #gmail {
+        grid-area: gmail;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #image {
+        grid-area: image;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #menu {
+        grid-area: menu;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #Connexion {
+        grid-area: Connexion;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 70px 70px;
+        grid-template-areas: ". logo ." ". search ." ". flexbox .";
+    }
+    
+    #logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: flex-end;
+    }
+    
+    #search {
+        grid-area: search;
+        height: 30px;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        border-radius: 30px;
+    }
+    
+    #flexbox {
+        display: flex;
+        grid-area: flexbox;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #recherche-Google {
+        border: none;
+        font-size: 15px;
+        color: #5F6368;
+        margin-right: 25px;
+        padding: 7px 15px 7px 15px;
+        border-radius: 3px;
+    }
+    
+    #chance {
+        border: none;
+        font-size: 15px;
+        color: #5F6368;
+        padding: 7px 15px 7px 15px;
+        border-radius: 3px;
+    }
+    
+    #country {
+        display: grid;
+        grid-template-columns: 1px;
+        grid-template-rows: 50px;
+        grid-template-areas: france;
+        align-self: left;
+    }
+    
+    #france {
+        grid-area: france;
+        justify-self: left; 
+        align-self: left;
+    }
+    
+    #footer {
+        background-color: #F2F2F2;
+        border-top: #DADCE0 solid;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 77px 77px 77px 77px 100px minmax(100px, 1000px) 150px 150px 100px;
+        grid-template-rows: 50px;
+        grid-template-areas: "propos publicite entreprise fonctionne feuille carbone consommateurs confidentialité conditions";
+    }
+    
+    #propos {
+        grid-area: propos;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #publicite {
+        grid-area: publicite;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #entreprise {
+        grid-area: entreprise;
+        justify-self: center;
+        align-self: center
+    }
+    
+    #fonctionne {
+        grid-area: fonctionne;
+        justify-self: center;
+        align-self: center
+    }
+    
+    #feuille {
+        grid-area: feuille;
+        justify-self: center;
+        align-self: center;
+    }
+    #carbone {
+        grid-area: carbone;
+        justify-self: center;
+        align-self: center
+    }
+    
+    #consommateurs {
+        grid-area: consommateurs;
+        justify-self: center;
+        align-self: center
+    }
+    
+    #confidentialité {
+        grid-area: confidentialité;
+        justify-self: center;
+        align-self: center
+    }
+    
+    #conditions {
+        grid-area: conditions;
+        justify-self: center;
+        align-self: center
+    }
+    /* minmax(0, 1330px)  */
